@@ -145,18 +145,6 @@ body
       07
     </a>
     
-    <a class="item" data-tab="08">
-      08
-    </a>
-    
-    <a class="item" data-tab="09">
-      09
-    </a>
-    
-    <a class="item" data-tab="10">
-      10
-    </a>
-    
     <div class="item">
       
     </div>
@@ -284,7 +272,7 @@ Chrome Web Browser, this is the application you use to view you website locally 
 <p><img src="./img/10.png" alt="">
 Your web page should now look like this.</p>
 <ul>
-<li>Scroll back up to the top of this page and click on step 02 in this lab (link is in the top bar of this web page).</li>
+<li>Scroll back up to the top of this page and click on the next step in this lab (link is in the top bar of this web page).</li>
 </ul>
 
       </div>
@@ -340,7 +328,7 @@ Your web page should now look like this.</p>
 <p>Your code now looks like this:</p>
 <p><img src="./img/17.png" alt=""></p>
 <ul>
-<li>Scroll back up to the top of this page and click on step 03 in this lab (link is in the top bar of this web page).</li>
+<li>Scroll back up to the top of this page and click on the next step in this lab (link is in the top bar of this web page).</li>
 </ul>
 
       </div>
@@ -423,7 +411,7 @@ First we need to be able to view our code in smaller parts. We do this by hiding
 <p><img src="./img/26.png" alt=""></p>
 <ul>
 <li>You should now see three pieces of content</li>
-<li>Scroll back up to the top of this page and click on step 04 in this lab (link is in the top bar of this web page).</li>
+<li>Scroll back up to the top of this page and click on the next step in this lab (link is in the top bar of this web page).</li>
 </ul>
 
       </div>
@@ -495,12 +483,12 @@ First we need to be able to view our code in smaller parts. We do this by hiding
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>If yours isnt quite the same, you can replace your version with the above - just copy/paste everything above, replacing your version completely.</p>
+<p>If yours isn&#39;t quite the same, you can replace your version with the above - just copy/paste everything above, replacing your version completely.</p>
 <p>Because the file is so long, it can get confusing to manage. Try <code>collapsing</code> the various sections by pressing the little triangle/arrows in the margin on the left. See if you can get the editor to look like this:</p>
 <p><img src="img/27.png" alt=""></p>
 <p>Now we can just <code>zoom in</code> on each card if we want to make some changes - say to the first card:</p>
 <p><img src="img/28.png" alt=""></p>
-<p>Lets make the spotify image a link, so it goes to the spotify page if we click on it. This is the tag we want to edit - make sure you can find it:</p>
+<p>Let&#39;s make the spotify image a link, so it goes to the spotify page if we click on it. This is the tag we want to edit - make sure you can find it:</p>
 <pre><code>            &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/spotify.png&quot;&gt;</code></pre>
 <p>Now, replace the above tag with this version:</p>
 <pre><code>            &lt;a href=&quot;https://www.spotify.com/ie&quot;&gt;
@@ -603,121 +591,6 @@ First we need to be able to view our code in smaller parts. We do this by hiding
       </div>
      
       <div  class="ui tab segment lab" data-tab="07">
-        <h1>The Command Prompt</h1>
-<p>In order to publish the site - we will need to become familiar with the Windows Command prompt - a application on your windows PC.</p>
-<h2>Command Prompt</h2>
-<p>Open a command prompt on Windows. The easiest way to do this is in Windows 7 to type &#39;cmd&#39; in the Search Box on the Windows start menu:</p>
-<p><img src="img/46.png" alt=""></p>
-<p>When you type it, the start menu might change to the following:</p>
-<p><img src="img/47.png" alt=""></p>
-<p>...and if you press return, then the command window itself will appear:</p>
-<p><img src="img/48.png" alt=""></p>
-<p>On Windows 8 and 10, access the desktop from the home screen, and run File Explorer (may be in the toolbar). Then select File-&gt;Open Command Prompt:</p>
-<p><img src="img/49.png" alt=""></p>
-<h2>Command Line</h2>
-<p>This is an alternative interface to Windows which it is important to become familiar with. In this window you can type what are sometimes called &#39;DOS&#39; commands. These commands let you have a finer level of control of your PC, and are particularly important for programmers to master.</p>
-<p>Here are some simple commands:</p>
-<ul>
-<li>dir<ul>
-<li>list all files in a directory</li>
-</ul>
-</li>
-<li>cd ..<ul>
-<li>change to a parent directory</li>
-</ul>
-</li>
-<li>cd \<directory name><ul>
-<li>change to a specific directory</li>
-</ul>
-</li>
-</ul>
-<p>It is essential that you become adept at these commands, and a few others.</p>
-<p>Bear in mind that these commands always have a &#39;current directory&#39; in mind (a directory is another name for a folder). Try them now and see if you can &#39;navigate&#39; to your web development workspace. For instance, if the folder is located as shown here:</p>
-<p><img src="img/50.png" alt=""></p>
-<p>Then the commands to get there will look like this:</p>
-<p><img src="img/51.png" alt=""></p>
-<p>If your workspace is located on another drive, the enter that drive letter first - say &quot;G:&quot;, press return, and then try the cd and dir commands.</p>
-<p><img src="img/52.png" alt=""></p>
-<p>Note in all of the above that the &#39;prompt&#39; in the command window is always showing the &#39;current&#39; drive/directory.</p>
-<p>Also, if you have a &#39;space&#39; in your directory (a bad idea generally), then you will have to use quotation marks in the commands. Here is an example:</p>
-<p><img src="img/53.png" alt=""></p>
-<p>See in the above transcript that the directory name is &quot;Web Development Workspace&quot; - and it has been enclosed in double quotes.</p>
-<p>In general, however, it is best to adopt the following conventions.</p>
-<ul>
-<li><p>Never use spaces in directory or file names</p>
-</li>
-<li><p>Never use upper case in directory or file names</p>
-</li>
-<li><p>If you wish to use readable multiple words for a directory or file name, separate the words with &#39;-&#39;. e.g.</p>
-<ul>
-<li>web-development</li>
-<li>java-projects</li>
-</ul>
-</li>
-</ul>
-<p>Perhaps you might take this opportunity to adjust your workspace and projects to adopt the above conventions. If you do, then you will find that using DOS commands to navigate your folders will be considerably easier.</p>
-<p>Before going on to the next step, make sure you are comfortable navigating in DOS around the file system, and in particular make sure you can navigate to your web development workspace.</p>
-<p>emily
-india lilly
-millie
-lucy
-iza
-issie
-megan
-kate
-dominique
-isla</p>
-
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="08">
-        <h1>Tools</h1>
-<p>Visit this site here:</p>
-<ul>
-<li><a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
-</ul>
-<p>Download and install the &quot;LTS&quot; version of node.</p>
-<p>Now visit this site:</p>
-<ul>
-<li><a href="https://harpjs.com/">https://harpjs.com/</a></li>
-</ul>
-<p>And see of you can install the harp package. On windows. the install can be carried out by entering the following commands in the command prompt:</p>
-<pre><code>npm install -g harp</code></pre>
-<p>If this works, then set your command prompt to the folder containing your camp-starter project:</p>
-<p><img src="img/03.png" alt=""></p>
-<p>See step 07 for simple commands to &#39;move&#39; around the folder structure on your PC.</p>
-<p>You should now be able to go on to the next step.</p>
-
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="09">
-        <h1>Publishing the web site</h1>
-<p>Somewhere on our desktop you should have a <code>Command Prompt</code> windows looking something like this:</p>
-<p><img src="img/33.png" alt=""></p>
-<p>Select this window, and enter the following <code>command</code> :</p>
-<pre><code>surge</code></pre>
-<p>When you press return, then the command prompt will look like this:</p>
-<p><img src="img/34.png" alt=""></p>
-<p>(you might need to press return a few times to skip over the defaults).</p>
-<p>When the publishing is finished - then you can try the link the project is published at (in green in the above):</p>
-<ul>
-<li><a href="http://curious-roll.surge.sh">http://curious-roll.surge.sh</a></li>
-</ul>
-<p>This link is now public! Ask your neighbour to look at your link and give him/her yours. </p>
-<h2>Challenge</h2>
-<ul>
-<li><p>See if you can create a card with an image that, when you click on it, visits your neighbours page - or any other page in the class.</p>
-</li>
-<li><p>When you run surge - you can enter in part of the name that the pages is published to. For instance</p>
-</li>
-</ul>
-<p><img src="img/34a.png" alt=""></p>
-<p>In the above, we are typing &#39;janes-page&#39; so that we are getting a different link generated:</p>
-<p><img src="img/34c.png" alt=""></p>
-
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="10">
         <h1>Toolkit</h1>
 <p>You have been building a page using this toolkit here:</p>
 <ul>
@@ -871,14 +744,6 @@ isla</p>
 <li>Refresh the Chrome web page.</li>
 </ul>
 <p><img src="./img/45.png" alt=""></p>
-<ul>
-<li>At this stage you could push your changes to your hosted website. To do this you go to the black command screen window and as you did before you type the following:</li>
-</ul>
-<pre><code>surge</code></pre>
-<ul>
-<li>Remember you can change the domain so it stays the same as before or you can use the new one. </li>
-<li>Now refresh the Chrome page for the hosted website and test out the share button ( you will have to login to Facebook to do this). </li>
-</ul>
 <p>Go and explore some more components!</p>
 
       </div>
