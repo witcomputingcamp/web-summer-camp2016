@@ -1,0 +1,965 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      Web Development
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Lab-00">
+      Lab-00
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="06">
+      06
+    </a>
+    
+    <a class="item" data-tab="07">
+      07
+    </a>
+    
+    <a class="item" data-tab="08">
+      08
+    </a>
+    
+    <a class="item" data-tab="09">
+      09
+    </a>
+    
+    <a class="item" data-tab="10">
+      10
+    </a>
+    
+    <div class="item">
+      
+    </div>
+  </div>
+</div>
+
+<div class="ui segment pushable" >
+
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="active item" href="../../topic01/book/index.html">
+          Lab-00
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment" id="labchat">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Lab-00">
+        <h1>Objectives</h1>
+<p>In this lab you will be create a website similar to the style of pinterest. To start click on step 01 in the top menu bar of this web page.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>The Tools</h1>
+<h2>Editor</h2>
+<p>Visit this site:</p>
+<ul>
+<li><a href="https://www.sublimetext.com/">https://www.sublimetext.com/</a></li>
+</ul>
+<p>And download and install the Sublime text editor.</p>
+<h2>Starter Project</h2>
+<p>Download this archive here:</p>
+<ul>
+<li><a href="archives/camp-starter.zip">camp-starter.zip</a></li>
+</ul>
+<p>Expand the archive (you may be able to do this just by double clicking on it).</p>
+<h2>Setting up the work environment</h2>
+<p>Once the project above is ex expanded - launch the Sublime text editor, and drag &amp; drop the folder containing the expanded project onto the sublime text editor window. Your work space should look like this:</p>
+<p><img src="img/01.png" alt=""></p>
+<p>Now, locate the &#39;index.html&#39; file in the archive an open it in a web browser:</p>
+<p><img src="img/02.png" alt=""></p>
+<p>You are now ready to go on to the next step...</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Web Development Tools</h1>
+<p>The following screens are open on your computer:</p>
+<p><img src="./img/01.png" alt="">
+Sublime Text Editor, this is where you will write your code for creating the website.</p>
+<p><img src="./img/02.png" alt="">
+Chrome Web Browser, this is the application you use to view you website locally on your computer and remotely on the Internet.</p>
+<h2>Structure</h2>
+<p>To develop a web page you must have a html code that the web browser understands and presents as a web page.</p>
+<p><img src="./img/04.png" alt=""></p>
+<p>The code you see in your Sublime editor is html code. It contains two parts, the <code>&lt;head</code>&gt; shown as the green section, and the <code>&lt;body</code>&gt; shown as the red section.</p>
+<p>You will not be making changes to the <code>&lt;head</code>&gt; section, all of your code will be put into the <code>&lt;body</code>&gt; which at the moment is blank. While it is blank the webpage open in the browser is also empty of any content and displays just as a white page. </p>
+<ul>
+<li>Copy the following lines of code (highlight the code, right click and choose copy) </li>
+</ul>
+<pre><code>
+    &lt;header class=&quot;ui two column center aligned middle aligned grid segment&quot;&gt;
+      &lt;div class=&quot;ui column&quot;&gt;
+        &lt;h2 class=&quot;ui header&quot;&gt; Department of Computing &amp;amp; Mathematics &lt;/h2&gt;
+        &lt;h3 class=&quot;ui header&quot;&gt;Computing Summer Camp&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ui column&quot;&gt;
+        &lt;p&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;</code></pre>
+<ul>
+<li>Go to the Sublime text editor and paste the code so that it appears in between the <code>&lt;body</code>&gt; and the <code>&lt;/body</code>&gt;</li>
+<li>It should look like this:</li>
+</ul>
+<p><img src="./img/05.png" alt=""></p>
+<ul>
+<li>From the File menu choose Save.</li>
+</ul>
+<p><img src="./img/06.png" alt=""></p>
+<ul>
+<li>Go to the Chrome web browser that is open on your computer and click the refresh button (see it circled in red below).</li>
+</ul>
+<p><img src="./img/07.png" alt=""></p>
+<ul>
+<li>You should see the following appear in your web page:</li>
+</ul>
+<p><img src="./img/08.png" alt=""></p>
+<ul>
+<li><p>You have now edited your html code so that the text will show in the browser. Next we will add more content.</p>
+</li>
+<li><p>Copy the following code </p>
+</li>
+</ul>
+<pre><code>
+ &lt;div class=&quot;ui container&quot;&gt;
+      &lt;div class=&quot;ui cards&quot;&gt;
+        &lt;div class=&quot;card&quot; id=&quot;spotify&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+            &lt;div class=&quot;header&quot;&gt;
+             Spotify
+            &lt;/div&gt;
+            &lt;div class=&quot;meta&quot;&gt;
+             Music for everyone
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;
+            There are millions of songs on Spotify. Play your favorites, discover new tracks, and build the perfect collection.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+<ul>
+<li>Go back to the Sublime text editor and paste it into the html code so that it comes directly after the <code>&lt;/header</code>&gt; as you can see below:</li>
+</ul>
+<p><img src="./img/09.png" alt=""></p>
+<ul>
+<li>Once you are happy that your code looks the same as the image above then choose Save from the File menu.</li>
+<li>Go to the Chrome web browser and click the refresh button to be able to view the changes you made.</li>
+</ul>
+<p><img src="./img/10.png" alt="">
+Your web page should now look like this.</p>
+<ul>
+<li>Scroll back up to the top of this page and click on step 02 in this lab (link is in the top bar of this web page).</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Images</h1>
+<p>Next we want to add some images to our web page.</p>
+<ul>
+<li>In your website folder you will see another folder called assets, in that folder you can see a folder called images.</li>
+</ul>
+<p><img src="./img/13.png" alt=""></p>
+<ul>
+<li>The Images folder contains 4 images, the first one we will use is wit-crest.png</li>
+<li>Copy the following line of code.</li>
+</ul>
+<pre><code>&lt;img class=&quot;ui medium image&quot; src=&quot;assets/images/wit-crest.png&quot; alt=&quot;WIT Crest&quot;&gt;</code></pre>
+<ul>
+<li>Go to Sublime text editor and place the line of code inside the <code>&lt;p</code>&gt; and <code>&lt;/p</code>&gt;  so that it looks like this:</li>
+</ul>
+<p><img src="./img/11.png" alt=""></p>
+<ul>
+<li><p>Choose save from the File menu in Sublime </p>
+</li>
+<li><p>Go to the Chrome web browser and click the refresh button to see the result.</p>
+</li>
+</ul>
+<p><img src="./img/12.png" alt=""></p>
+<ul>
+<li>You should see the W.I.T crest banner appear in the top right of the header.</li>
+<li>Next we want to add an image to the Spotify content.</li>
+<li>Copy the following code.</li>
+</ul>
+<pre><code>       &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/spotify.png&quot;&gt;</code></pre>
+<ul>
+<li>Go to Sublime text editor and paste the code so that it appears just after the <code>&lt;div class=&quot;content&quot;</code>&gt;</li>
+</ul>
+<p><img src="./img/14.png" alt=""></p>
+<ul>
+<li>If you are happy that your code looks the same as above then choose Save from the File menu.</li>
+<li>Go to the Chrome web browser and click the refresh button.</li>
+</ul>
+<p><img src="./img/15.png" alt=""></p>
+<ul>
+<li>Now that we have the Spotify image visible the text to the right isn&#39;t really needed. Try removing the text &quot;Spotify&quot; so that the content looks the same as this:</li>
+</ul>
+<p><img src="./img/16.png" alt=""></p>
+<ul>
+<li>You do this by going to Sublime text editor and deleting the code:</li>
+</ul>
+<pre><code>&lt;div class=&quot;header&quot;&gt;
+  Spotify
+&lt;/div&gt;</code></pre>
+<p>Your code now looks like this:</p>
+<p><img src="./img/17.png" alt=""></p>
+<ul>
+<li>Scroll back up to the top of this page and click on step 03 in this lab (link is in the top bar of this web page).</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Adding content</h1>
+<p>Now we have created one piece of content we can copy it and make two more pieces of content.
+First we need to be able to view our code in smaller parts. We do this by hiding some parts of the code and showing other parts. </p>
+<ul>
+<li>In the Sublime text editor move your mouse near the number 23 (this is the line number). It must be the line that contains the code <code>&lt;div class=&quot;card&quot; id=&quot;spotify&quot;</code>&gt; . You should see a small downwards facing arrow appearing beside the number. </li>
+<li>Click on this arrow.</li>
+</ul>
+<p><img src="./img/18.png" alt=""></p>
+<ul>
+<li>Once the arrow is clicked all of the code for the spotify content is hidden and it looks like this:</li>
+</ul>
+<p><img src="./img/19.png" alt=""></p>
+<ul>
+<li><p>This makes is easier to read a large file of code. We will be now adding more code and this technique is helpful for viewing sections of code.</p>
+</li>
+<li><p>Copy this section of code</p>
+</li>
+</ul>
+<pre><code>        &lt;div class=&quot;card&quot; id=&quot;euro2016&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+             &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/euro2016.jpg&quot;&gt;
+          &lt;div class=&quot;meta&quot;&gt;
+             10th June - 10th July
+          &lt;/div&gt;
+          &lt;div class=&quot;description&quot;&gt;
+            The 2016 UEFA European Championship will be the 15th edition of the international men&#39;s football championship of Europe.
+          &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
+<ul>
+<li>Go to the Sublime text editor and paste the section of code directly after the <code>&lt;/div</code>&gt; for the spotify section as shown below:</li>
+</ul>
+<p><img src="./img/20.png" alt=""></p>
+<ul>
+<li>If you are happy your code now looks like this:</li>
+</ul>
+<p><img src="./img/21.png" alt=""></p>
+<ul>
+<li>Choose save from the file menu</li>
+<li>Go to the Chrome web browser and click the refresh button.</li>
+</ul>
+<p><img src="./img/22.png" alt=""></p>
+<ul>
+<li>We now have two pieces of content, one for spotify and one for the European Cup.</li>
+<li>We will add one more piece of content to complete the web page content.</li>
+<li>First hide the section of code that relates to the euro2016 piece of content, you do this by clicking on the downwards arrow beside number 34 (the line of code containing <code>&lt;div class=&quot;card&quot; id=&quot;euro2016&quot;</code>&gt;. Your code will now look like this:</li>
+</ul>
+<p><img src="./img/23.png" alt=""></p>
+<ul>
+<li>Copy this piece of code</li>
+</ul>
+<pre><code>        &lt;div class=&quot;card&quot; id=&quot;chewbacca-mom&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+             &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/chewbacca-mom.jpg&quot;&gt;
+          &lt;div class=&quot;meta&quot;&gt;
+             Chewbacca laugh heard around the world
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;
+            Payne could hardly contain her excitement after buying the Chewbacca mask from Kohls for herself as part of her birthday joy.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
+<ul>
+<li>Go to Sublime text editor and paste the piece of code directly after the <code>&lt;/div</code>&gt; for the euro2016 section, as shown below:</li>
+</ul>
+<p><img src="./img/24.png" alt=""></p>
+<ul>
+<li>Your code should now look like this:</li>
+</ul>
+<p><img src="./img/25.png" alt=""></p>
+<ul>
+<li>Choose Save from the File menu if your code is correct.</li>
+<li>Go to Chrome web browser and click refresh.</li>
+</ul>
+<p><img src="./img/26.png" alt=""></p>
+<ul>
+<li>You should now see three pieces of content</li>
+<li>Scroll back up to the top of this page and click on step 04 in this lab (link is in the top bar of this web page).</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>More Cards</h1>
+<p>Our complete web page <code>source</code> should now be like this:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css&quot;
+          type=&quot;text/css&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;
+            src=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header class=&quot;ui two column center aligned middle aligned grid segment&quot;&gt;
+      &lt;div class=&quot;ui column&quot;&gt;
+        &lt;h2 class=&quot;ui header&quot;&gt; Department of Computing &amp;amp; Mathematics &lt;/h2&gt;
+        &lt;h3 class=&quot;ui header&quot;&gt;Computing Summer Camp&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ui column&quot;&gt;
+        &lt;p&gt;
+          &lt;img class=&quot;ui medium image&quot; src=&quot;assets/images/wit-crest.png&quot; alt=&quot;WIT Crest&quot;&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;ui container&quot;&gt;
+      &lt;div class=&quot;ui cards&quot;&gt;
+        &lt;div class=&quot;card&quot; id=&quot;spotify&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+            &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/spotify.png&quot;&gt;
+            &lt;div class=&quot;meta&quot;&gt;
+              Music for everyone
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;
+              There are millions of songs on Spotify. Play your favorites, discover new tracks, and build the perfect
+              collection.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot; id=&quot;euro2016&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+            &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/euro2016.jpg&quot;&gt;
+            &lt;div class=&quot;meta&quot;&gt;
+              10th June - 10th July
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;
+              The 2016 UEFA European Championship will be the 15th edition of the international men&#39;s football
+              championship of Europe.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot; id=&quot;chewbacca-mom&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+            &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/chewbacca-mom.jpg&quot;&gt;
+            &lt;div class=&quot;meta&quot;&gt;
+              Chewbacca laugh heard around the world
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;
+              Payne could hardly contain her excitement after buying the Chewbacca mask from Kohls for herself as part
+              of her birthday joy.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>If yours isnt quite the same, you can replace your version with the above - just copy/paste everything above, replacing your version completely.</p>
+<p>Because the file is so long, it can get confusing to manage. Try <code>collapsing</code> the various sections by pressing the little triangle/arrows in the margin on the left. See if you can get the editor to look like this:</p>
+<p><img src="img/27.png" alt=""></p>
+<p>Now we can just <code>zoom in</code> on each card if we want to make some changes - say to the first card:</p>
+<p><img src="img/28.png" alt=""></p>
+<p>Lets make the spotify image a link, so it goes to the spotify page if we click on it. This is the tag we want to edit - make sure you can find it:</p>
+<pre><code>            &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/spotify.png&quot;&gt;</code></pre>
+<p>Now, replace the above tag with this version:</p>
+<pre><code>            &lt;a href=&quot;https://www.spotify.com/ie&quot;&gt;
+              &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/spotify.png&quot;&gt;
+            &lt;/a&gt;</code></pre>
+<p>Make sure you keep the tags lined up in an <code>indented</code> pattern so it looks like this:</p>
+<p><img src="img/29.png" alt=""></p>
+<p>Refresh the pages in your browser now - see if the spotify link is active - i.e. clicking on it takes you the spotify web site.</p>
+<h2>Challenge!</h2>
+<p>Using the above as a guide - see if you can link up the images in the other two cards to these links here:</p>
+<ul>
+<li><p><a href="http://www.uefa.com/uefaeuro">http://www.uefa.com/uefaeuro</a></p>
+</li>
+<li><p><a href="https://www.youtube.com/watch?v=hyp90txeNxM">https://www.youtube.com/watch?v=hyp90txeNxM</a></p>
+</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>More Cards</h1>
+<p>Here is another example of a card</p>
+  <div class="ui card">
+    <div class="image">
+      <img src="img/matthew.png">
+    </div>
+    <div class="content">
+      <div class="header">Matt Sullivan</div>
+      <div class="meta">
+        <a>Friends</a>
+      </div>
+      <div class="description">
+        Matthew is a computing student at WIT.
+      </div>
+    </div>
+  </div>
+
+<p>And this is the source:</p>
+<pre><code>        &lt;div class=&quot;ui card&quot;&gt;
+          &lt;div class=&quot;image&quot;&gt;
+            &lt;img src=&quot;assets/images/matthew.png&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;content&quot;&gt;
+            &lt;div class=&quot;header&quot;&gt;Matt Sullivan&lt;/div&gt;
+            &lt;div class=&quot;meta&quot;&gt;
+              &lt;a&gt;Friends&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;
+              Matthew is a computing student at WIT.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
+<p>Make a few cards using this template and put them on your page. There are some other avatar images in your assets folder you can link to with these names:</p>
+<ul>
+<li>daniel.png</li>
+<li>kristy.png</li>
+<li>elyse.png</li>
+<li>helen.png</li>
+<li>kristy.png</li>
+<li>stevie.png</li>
+<li>veronika.png</li>
+</ul>
+<p>Just change the image link from <code>assets/images/matthew.png</code> to  <code>assets/images/kristy.png</code> or whatever. Create a few cards now, use your own name or make up some names - and write some short summary text (about yourself?).</p>
+<h2>Linking to Images from the Web</h2>
+<p>You can also create a card that links directly to an image on the web. Here is a link to some online avatar images:</p>
+<ul>
+<li><a href="https://openclipart.org/search/?query=avatars">Avatar Images</a></li>
+</ul>
+<p>Find one you like - and click on it:</p>
+<p><img src="img/31.png" alt=""></p>
+<p>Then, select an image and press the <code>right</code> mouse button. Select <code>Copy image address</code>...</p>
+<p><img src="img/32.png" alt=""></p>
+<p>Now, in a card you are creating, try pasting the the address you just copied into the image link. It might start to look like this when you paste it in:</p>
+<pre><code>          &lt;div class=&quot;image&quot;&gt;
+            &lt;img src=&quot;https://openclipart.org/image/2400px/svg_to_png/173098/Avatar-II.png&quot;&gt;
+          &lt;/div&gt;</code></pre>
+<p>The card will look like this in the browser:</p>
+ <div class="ui card">
+   <div class="image">
+     <img src="https://openclipart.org/image/2400px/svg_to_png/173098/Avatar-II.png">
+   </div>
+   <div class="content">
+     <div class="header">Matt Sullivan</div>
+     <div class="meta">
+       <a>Friends</a>
+     </div>
+     <div class="description">
+       Matthew is a computing student at WIT.
+     </div>
+   </div>
+ </div>
+
+
+<p>Fish out a few more images from here:</p>
+<ul>
+<li><a href="https://openclipart.org/search/?query=avatars">Avatar Images</a></li>
+</ul>
+<p>and create some more cards.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="07">
+        <h1>The Command Prompt</h1>
+<p>In order to publish the site - we will need to become familiar with the Windows Command prompt - a application on your windows PC.</p>
+<h2>Command Prompt</h2>
+<p>Open a command prompt on Windows. The easiest way to do this is in Windows 7 to type &#39;cmd&#39; in the Search Box on the Windows start menu:</p>
+<p><img src="img/46.png" alt=""></p>
+<p>When you type it, the start menu might change to the following:</p>
+<p><img src="img/47.png" alt=""></p>
+<p>...and if you press return, then the command window itself will appear:</p>
+<p><img src="img/48.png" alt=""></p>
+<p>On Windows 8 and 10, access the desktop from the home screen, and run File Explorer (may be in the toolbar). Then select File-&gt;Open Command Prompt:</p>
+<p><img src="img/49.png" alt=""></p>
+<h2>Command Line</h2>
+<p>This is an alternative interface to Windows which it is important to become familiar with. In this window you can type what are sometimes called &#39;DOS&#39; commands. These commands let you have a finer level of control of your PC, and are particularly important for programmers to master.</p>
+<p>Here are some simple commands:</p>
+<ul>
+<li>dir<ul>
+<li>list all files in a directory</li>
+</ul>
+</li>
+<li>cd ..<ul>
+<li>change to a parent directory</li>
+</ul>
+</li>
+<li>cd \<directory name><ul>
+<li>change to a specific directory</li>
+</ul>
+</li>
+</ul>
+<p>It is essential that you become adept at these commands, and a few others.</p>
+<p>Bear in mind that these commands always have a &#39;current directory&#39; in mind (a directory is another name for a folder). Try them now and see if you can &#39;navigate&#39; to your web development workspace. For instance, if the folder is located as shown here:</p>
+<p><img src="img/50.png" alt=""></p>
+<p>Then the commands to get there will look like this:</p>
+<p><img src="img/51.png" alt=""></p>
+<p>If your workspace is located on another drive, the enter that drive letter first - say &quot;G:&quot;, press return, and then try the cd and dir commands.</p>
+<p><img src="img/52.png" alt=""></p>
+<p>Note in all of the above that the &#39;prompt&#39; in the command window is always showing the &#39;current&#39; drive/directory.</p>
+<p>Also, if you have a &#39;space&#39; in your directory (a bad idea generally), then you will have to use quotation marks in the commands. Here is an example:</p>
+<p><img src="img/53.png" alt=""></p>
+<p>See in the above transcript that the directory name is &quot;Web Development Workspace&quot; - and it has been enclosed in double quotes.</p>
+<p>In general, however, it is best to adopt the following conventions.</p>
+<ul>
+<li><p>Never use spaces in directory or file names</p>
+</li>
+<li><p>Never use upper case in directory or file names</p>
+</li>
+<li><p>If you wish to use readable multiple words for a directory or file name, separate the words with &#39;-&#39;. e.g.</p>
+<ul>
+<li>web-development</li>
+<li>java-projects</li>
+</ul>
+</li>
+</ul>
+<p>Perhaps you might take this opportunity to adjust your workspace and projects to adopt the above conventions. If you do, then you will find that using DOS commands to navigate your folders will be considerably easier.</p>
+<p>Before going on to the next step, make sure you are comfortable navigating in DOS around the file system, and in particular make sure you can navigate to your web development workspace.</p>
+<p>emily
+india lilly
+millie
+lucy
+iza
+issie
+megan
+kate
+dominique
+isla</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="08">
+        <h1>Tools</h1>
+<p>Visit this site here:</p>
+<ul>
+<li><a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
+</ul>
+<p>Download and install the &quot;LTS&quot; version of node.</p>
+<p>Now visit this site:</p>
+<ul>
+<li><a href="https://harpjs.com/">https://harpjs.com/</a></li>
+</ul>
+<p>And see of you can install the harp package. On windows. the install can be carried out by entering the following commands in the command prompt:</p>
+<pre><code>npm install -g harp</code></pre>
+<p>If this works, then set your command prompt to the folder containing your camp-starter project:</p>
+<p><img src="img/03.png" alt=""></p>
+<p>See step 07 for simple commands to &#39;move&#39; around the folder structure on your PC.</p>
+<p>You should now be able to go on to the next step.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="09">
+        <h1>Publishing the web site</h1>
+<p>Somewhere on our desktop you should have a <code>Command Prompt</code> windows looking something like this:</p>
+<p><img src="img/33.png" alt=""></p>
+<p>Select this window, and enter the following <code>command</code> :</p>
+<pre><code>surge</code></pre>
+<p>When you press return, then the command prompt will look like this:</p>
+<p><img src="img/34.png" alt=""></p>
+<p>(you might need to press return a few times to skip over the defaults).</p>
+<p>When the publishing is finished - then you can try the link the project is published at (in green in the above):</p>
+<ul>
+<li><a href="http://curious-roll.surge.sh">http://curious-roll.surge.sh</a></li>
+</ul>
+<p>This link is now public! Ask your neighbour to look at your link and give him/her yours. </p>
+<h2>Challenge</h2>
+<ul>
+<li><p>See if you can create a card with an image that, when you click on it, visits your neighbours page - or any other page in the class.</p>
+</li>
+<li><p>When you run surge - you can enter in part of the name that the pages is published to. For instance</p>
+</li>
+</ul>
+<p><img src="img/34a.png" alt=""></p>
+<p>In the above, we are typing &#39;janes-page&#39; so that we are getting a different link generated:</p>
+<p><img src="img/34c.png" alt=""></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="10">
+        <h1>Toolkit</h1>
+<p>You have been building a page using this toolkit here:</p>
+<ul>
+<li><a href="http://semantic-ui.com/">http://semantic-ui.com/</a></li>
+</ul>
+<p>This is a library of web components - and you can pick and choose from many different types of component (scroll down to see some examples). If you click on the <code>menu</code> button on the top left:</p>
+<p><img src="img/35.png" alt=""></p>
+<p>Then it will reveal a palette of interesting components:</p>
+<p><img src="img/36.png" alt=""></p>
+<p>You have been using the <code>card</code> - at the very end of the list above. Click on <code>card</code> in the list, and you will see a basic card:</p>
+<p><img src="img/37.png" alt=""></p>
+<p>Here is the interesting part - click on the <code>&lt;&gt;</code> symbols on the top right - and the codes needed to display a card are revealed:</p>
+<p><img src="img/38.png" alt=""></p>
+<p>If you copy and paste the revealed code:</p>
+<pre><code>&lt;div class=&quot;ui card&quot;&gt;
+  &lt;div class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/images/avatar2/large/kristy.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;a class=&quot;header&quot;&gt;Kristy&lt;/a&gt;
+    &lt;div class=&quot;meta&quot;&gt;
+      &lt;span class=&quot;date&quot;&gt;Joined in 2013&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;description&quot;&gt;
+      Kristy is an art director living in New York.
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;extra content&quot;&gt;
+    &lt;a&gt;
+      &lt;i class=&quot;user icon&quot;&gt;&lt;/i&gt;
+      22 Friends
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>..into your page you get the card:</p>
+<div class="ui card">
+  <div class="image">
+    <img src="img/kristy.png">
+  </div>
+  <div class="content">
+    <a class="header">Kristy</a>
+    <div class="meta">
+      <span class="date">Joined in 2013</span>
+    </div>
+    <div class="description">
+      Kristy is an art director living in New York.
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="user icon"></i>
+      22 Friends
+    </a>
+  </div>
+</div>
+
+<p>(The image will not work initaly - but dont worry about this).</p>
+<p>Hunt around among the other components and see what you can make work. Remember, you need to press the <code>&lt;&gt;</code> link to get the code, then past the code into your page, save the file, and refresh the page to see it in action. For example, have a look at:</p>
+<ul>
+<li><a href="http://semantic-ui.com/elements/button.html">Buttons</a></li>
+<li><a href="http://semantic-ui.com/elements/label.html">Labels</a></li>
+<li><a href="http://semantic-ui.com/elements/list.html">Lists</a></li>
+<li><a href="http://semantic-ui.com/views/comment.html">Comments</a></li>
+<li><a href="http://semantic-ui.com/views/statistic.html">Statistic</a></li>
+<li><a href="http://semantic-ui.com/modules/progress.html">Progress</a></li>
+</ul>
+<p>See of you can make some of these, or any others ones, work.</p>
+<h2>Example - Button</h2>
+<p>For instance if you visit this page:</p>
+<ul>
+<li><a href="http://semantic-ui.com/elements/button.html">http://semantic-ui.com/elements/button.html</a></li>
+</ul>
+<p>Scroll down a bit and you see some interesting buttons:</p>
+<p><img src="img/39.png" alt=""></p>
+<p>Press <code>&lt;&gt;</code> to reveal the code:</p>
+<p><img src="img/40.png" alt=""></p>
+<p>Copy/paste the first button into your page - perhaps inside a card - you can get this effect:</p>
+<div class="ui card">
+  <div class="image">
+    <img src="img/kristy.png">
+  </div>
+  <div class="content">
+    <a class="header">Kristy</a>
+    <div class="meta">
+      <span class="date">Joined in 2013</span>
+    </div>
+    <div class="description">
+      Kristy is an art director living in New York.
+    </div>
+  </div>
+  <div class="extra content">
+<div class="ui labeled button" tabindex="0">
+  <div class="ui red button">
+    <i class="heart icon"></i> Like
+  </div>
+  <a class="ui basic red left pointing label">
+    1,048
+  </a>
+</div>
+  </div>
+</div>
+
+<h2>Icons</h2>
+<ul>
+<li><p>Lets try adding instagram and facebook icons to one of the cards.</p>
+</li>
+<li><p>Semantic contains icons in the Elements section.</p>
+</li>
+</ul>
+<p><img src="img/41.png" alt=""></p>
+<ul>
+<li>We will add the following code to the Uefa Euro Championship 2016 card.</li>
+</ul>
+<pre><code>        &lt;div class=&quot;extra content&quot;&gt;
+            &lt;a href=&quot;https://www.facebook.com/uefachampionsleague/?fref=ts&quot;&gt;
+              &lt;i class=&quot;facebook square icon large&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;https://www.instagram.com/uefaeuro/?hl=en&quot;&gt;
+              &lt;i class=&quot;instagram icon large&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;https://www.pinterest.com/maferqui/uefa-champions-league/?etslf=8517&amp;eq=uefa&quot;&gt;
+              &lt;i class=&quot;pinterest icon large&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;</code></pre>
+<ul>
+<li>Copy the code, in Sublime you need to place this section of code directly after the description <code>&lt;/div</code>&gt;</li>
+</ul>
+<p><img src="./img/42.png" alt=""></p>
+<ul>
+<li>Save in the Sublime editor and refresh the Chrome browser to see the results locally.</li>
+<li>It should show like this:</li>
+</ul>
+<p><img src="./img/43.png" alt=""></p>
+<ul>
+<li>click on the icons to see that they bring you to the correct pages.</li>
+</ul>
+<h2>Share button</h2>
+<ul>
+<li>Now we will try adding a share button to Matt&#39;s card.</li>
+<li>Copy this code</li>
+</ul>
+<pre><code> &lt;div class=&quot;extra content&quot;&gt;
+            &lt;iframe src=&quot;https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fwitcomp%2Fposts%2F1014124925340048&amp;layout=button&amp;mobile_iframe=true&amp;width=57&amp;height=20&amp;appId&quot; width=&quot;57&quot; height=&quot;20&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;</code></pre>
+<ul>
+<li>In Sublime editor paste the code into the card for Matt. It needs to go just before the <code>&lt;/div</code>&gt; as shown below:</li>
+</ul>
+<p><img src="./img/44.png" alt=""></p>
+<ul>
+<li>Save in Sublime</li>
+<li>Refresh the Chrome web page.</li>
+</ul>
+<p><img src="./img/45.png" alt=""></p>
+<ul>
+<li>At this stage you could push your changes to your hosted website. To do this you go to the black command screen window and as you did before you type the following:</li>
+</ul>
+<pre><code>surge</code></pre>
+<ul>
+<li>Remember you can change the domain so it stays the same as before or you can use the new one. </li>
+<li>Now refresh the Chrome page for the hosted website and test out the share button ( you will have to login to Facebook to do this). </li>
+</ul>
+<p>Go and explore some more components!</p>
+
+      </div>
+     
+    </div>
+
+  </div>
+
+</div>
+<!--  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        Dr. Brenda Mullally (bmullally@wit.ie) Eamonn De Leastar (edeleaster@wit.ie).
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>-->
+
+<script>
+  $(document).on('keydown', function (e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
